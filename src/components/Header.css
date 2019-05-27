@@ -17,6 +17,15 @@
 .Header a {
     color: white;
     font-weight: 700;
+    transition: 400ms;
+    transform: translateY(0px) scale(1);
+}
+
+.Header a:hover {
+    text-shadow: 0 4px 15px rgba(0, 0, 0, .75);
+    transition: 500ms;
+    transform: translateY(-2px) scale(1.02);
+    
 }
 
 .Header button {
@@ -29,6 +38,30 @@
     border-radius: 6px;
     outline: none;
     cursor: pointer;
+    transition: 800ms;
+    transform: none;;
+    box-shadow: none;
+   
+}
+
+.Header button:hover {
+    background: white;
+    color:  rgb(37, 97, 226);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+    transform: translateY(-1px) scale(1.02);
+    transition: 1s cubic-bezier(0.2, .8, 0.2, 1);
+}
+
+.HeaderGroup a:nth-child(1) {
+    filter: none;
+    transform: none;
+    transition: 350ms;
+}
+
+.HeaderGroup a:nth-child(1):hover {
+    filter: drop-shadow(0 12px 12px rgba(0, 0, 0, .25));
+    transform: translateY(-1px) scale(1.02);
+    transition: 500ms;
 }
 
 @media (max-width:640px) {
