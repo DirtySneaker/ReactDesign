@@ -17,6 +17,8 @@
 
 .Card:hover img {
     transform: scale(1);
+    cursor: pointer;
+    filter: blur(3px);
 }
 
 .Card img {

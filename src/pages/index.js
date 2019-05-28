@@ -35,11 +35,24 @@ const IndexPage = () => (
     </div>
     <div className="Cards">
       <h2>Tons more courses coming soon!</h2>
-      <Card 
-      title="React for Designers"
-      text="12+ Courses"
-      image={require('../images/wallpaper.jpg')}
-      />
+        <div className="cardGroup">
+          <Card 
+          title="React for Designers"
+          text="12+ Courses"
+          image={require('../images/wallpaper.jpg')}/>
+          <Card 
+          title="Designer for People"
+          text="12+ Courses"
+          image={require('../images/wallpaper2.jpg')}/>
+          <Card 
+          title="People for Dogs"
+          text="12+ Courses"
+          image={require('../images/wallpaper3.jpg')}/>
+          <Card 
+          title="Dogs for President"
+          text="12+ Courses"
+          image={require('../images/wallpaper4.jpg')}/>
+        </div>
     </div>
   </div>
 )
