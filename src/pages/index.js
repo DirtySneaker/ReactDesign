@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/card';
+import Section from '../components/Section';
 
 const IndexPage = () => (
   <div>
@@ -11,12 +12,12 @@ const IndexPage = () => (
         <div className="ButtonStyle1">
          <Link to="/page-2/">Go to page 2</Link>
         <div className="Logos">
-          <img src={require('..//images/logo-sketch.png')} width="50px;" />
-          <img src={require('..//images/logo-figma.png')} width="50px;" />
-          <img src={require('..//images/logo-framer.png')} width="50px;" />
-          <img src={require('..//images/logo-studio.png')} width="50px;" />
-          <img src={require('..//images/logo-react.png')} width="50px;" />
-          <img src={require('..//images/logo-swift.png')} width="50px;" />
+          <img href="#" className="ToolsLogo" src={require('..//images/logo-sketch.png')} width="50px;" />
+          <img href="#" className="ToolsLogo" src={require('..//images/logo-figma.png')} width="50px;" />
+          <img href="#" className="ToolsLogo" src={require('..//images/logo-framer.png')} width="50px;" />
+          <img href="#" className="ToolsLogo" src={require('..//images/logo-studio.png')} width="50px;" />
+          <img href="#" className="ToolsLogo" src={require('..//images/logo-react.png')} width="50px;" />
+          <img href="#" className="ToolsLogo" src={require('..//images/logo-swift.png')} width="50px;" />
         </div>
          <svg width="100%" height="172" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path 
@@ -54,6 +55,12 @@ const IndexPage = () => (
           image={require('../images/wallpaper4.jpg')}/>
         </div>
     </div>
+    <Section 
+    image={require('../images/wallpaper2.jpg')}
+    logo={require('../images/logo-react.png')}
+    Title="React For Designers"
+    text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+    />
   </div>
 )
 
