@@ -12,7 +12,7 @@ const SectionGroup = styled.div`
     position: relative;
 
     @media (max-width:640px) {
-        height: 820px;
+        height: 750px;
     }
 `
 const SectionLogo = styled.img `
@@ -21,21 +21,26 @@ const SectionLogo = styled.img `
     margin: 0 auto;
 `
 const SectionTitleGroup = styled.div`
+    max-width: 700px;
     display: grid;
     grid-template-columns: 300px auto;
     grid-template-rows: auto 100%;
-    margin: 0 40px;
+    margin: 10px auto;
     grid-gap: 20px;
 
     @media (max-width: 720px) {
         grid-template-columns: 1fr;
+        max-width: 90%;
+        text-align: center;
+        margin: 20px auto;
+        grid-gap: 0px;
     }
 `
 const SectionTitle = styled.h3`
     color: #FFF;
     font-size: 50px;
-    margin: 0;
-    line-height: 1.2;
+    margin: 10px;
+    line-height: 1.1;
 
     @media (max-width: 720px) {
         font-size: 32px;
