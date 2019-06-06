@@ -47,18 +47,20 @@ const IndexPage = () => (
           image={require('../images/wallpaper4.jpg')}/>
         </div>
     </div>
-    <Section 
+    <Section>
     image={require('../images/wallpaper2.jpg')}
     logo={require('../images/logo-react.png')}
     title="React For Designers"
     text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
-    />
+    </Section>
+    <div>
     {staticdata.cells.map(cell => (
       <Cell 
       title={cell.title} 
       image={cell.image}
       />
     ))}
+    </div>
 
   </div>
 )

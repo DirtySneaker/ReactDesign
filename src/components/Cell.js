@@ -10,6 +10,8 @@ const CellImage = styled.div`
     height: 60px;
     background: #000;
     border-radius: 4px;
+    background-image: url(${props => props.image});
+    background-size: 60px;
 `
 
 const CellTitle = styled.div`
@@ -20,7 +22,7 @@ const CellTitle = styled.div`
 const Cell = props => (
     <CellGroup>
         <CellImage image={props.image}></CellImage>
-        <CellTitle >{props.title}</CellTitle>
+        <CellTitle>{props.title}</CellTitle>
     </CellGroup>
 )
 
