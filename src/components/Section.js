@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-Components'
+import styled from 'styled-components'
 import Wave from './Wave';
 
 const SectionGroup = styled.div`
@@ -37,7 +37,7 @@ const SectionTitleGroup = styled.div`
     }
 `
 const SectionTitle = styled.h3`
-    color: #FFF;
+    color: white;
     font-size: 50px;
     margin: 10px;
     line-height: 1.1;
@@ -47,7 +47,7 @@ const SectionTitle = styled.h3`
     }
 `
 const SectionText = styled.p`
-    color: #FFF;
+    color: white;
 `
 const WaveBottom = styled.div`
     position: absolute;
@@ -61,17 +61,17 @@ const WaveTop = styled.div`
     transform: rotate(180deg);
 `
 
+
 const Section = props => (
-    <SectionGroup image={props.image}>
+	<SectionGroup image={props.image}>
         <WaveTop><Wave /></WaveTop>
         <WaveBottom><Wave /></WaveBottom>
-        <SectionLogo src={props.logo} />
-        <SectionTitleGroup>
-            <SectionTitle>{props.title}</SectionTitle>
-            <SectionText>{props.text}</SectionText>
-        </SectionTitleGroup>
-
-    </SectionGroup>
+		<SectionLogo src={props.logo} />
+		<SectionTitleGroup>
+			<SectionTitle>{props.title}</SectionTitle>
+			<SectionText>{props.text}</SectionText>
+		</SectionTitleGroup>
+	</SectionGroup>
 )
 
 export default Section
